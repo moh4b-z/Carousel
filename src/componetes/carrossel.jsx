@@ -3,15 +3,15 @@ import Foto from './foto'
 import './foto.css'
 
 function Carousel({ fotos }) {
-  const [indexAtual, setIndexAtual] = useState(0);
+  const [indexAtual, setIndexAtual] = useState(0)
 
   const proxima = () => {
-    setIndexAtual((prev) => (prev + 1) % fotos.length);
-  };
+    setIndexAtual((prev) => (prev + 1) % fotos.length)
+  }
 
   const anterior = () => {
-    setIndexAtual((prev) => (prev - 1 + fotos.length) % fotos.length);
-  };
+    setIndexAtual((prev) => (prev - 1 + fotos.length) % fotos.length)
+  }
 
   return (
     <div className="carousel">
@@ -19,7 +19,7 @@ function Carousel({ fotos }) {
       <Foto foto={fotos[indexAtual]} />
       <button onClick={proxima}>▶</button>
     </div>
-  );
+  )
 }
 
-export default Carousel;
+export default Carousel
