@@ -1,3 +1,3 @@
-const BASE_URL = 'https://mockapifotos.onrender.com/'
+const BASE_URL = 'https://mockapi-mbb3.onrender.com'
 
 export default BASE_URL
